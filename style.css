@@ -1,7 +1,7 @@
 .container {
-    width: 80%;  /* Makes the container take up 80% of the screen width */
-    max-width: 900px; /* Prevents it from getting too wide */
-    margin: 0 auto;  /* Centers the container horizontally */
+    width: 80%; 
+    max-width: 900px;
+    margin: 0 auto;  
     padding: 20px;
     text-align: center;
 }
@@ -11,7 +11,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adds spacing between nav items */
+    gap: 20px; 
 }
 
 nav a {
@@ -21,8 +21,11 @@ nav a {
 }
 
 img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    width: 100%;  
+    max-width: 300px;
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+    border-radius: 10px; 
 }
+
