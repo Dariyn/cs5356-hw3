@@ -1,5 +1,28 @@
 .container {
+    width: 80%;  /* Makes the container take up 80% of the screen width */
+    max-width: 900px; /* Prevents it from getting too wide */
+    margin: 0 auto;  /* Centers the container horizontally */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
