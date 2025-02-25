@@ -27,7 +27,7 @@ img {
     display: block; 
     margin: 10px auto; 
     border-radius: 10px;        
-    filter: grayscale(50%) !important;
+    filter: grayscale(50%) brightness(80%) contrast(120%)!important;
     
 }
 
