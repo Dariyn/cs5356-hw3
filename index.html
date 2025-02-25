@@ -1,9 +1,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="My Homepage">
+    <meta property="og:image" content="https://dariyn.github.io/cs5356-hw3/img/me.jpg">
+    <meta property="og:description" content="Welcome to my personal homepage!">
+
     <title>My Personal Homepage</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head> 
 
 
 <div class="container">
@@ -31,6 +35,23 @@
         <p>Hey! You found me :>.</p>
       </details>
 
+      <div id="joke"></div>
+      <script>
+          fetch('https://v2.jokeapi.dev/joke/Any')
+              .then(response => response.json())
+              .then(data => {
+                  document.getElementById("joke").innerHTML = data.setup + " - " + data.delivery;
+              });
+      </script>
+
+<div id="hoverBox" style="width:100px; height:100px; background-color:red;"></div>
+<script>
+    document.getElementById("hoverBox").addEventListener("mousemove", (e) => {
+        e.target.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 150)`;
+    });
+</script>
+
+      
 
     <footer>
         <p>&copy; 2024 Darren Choy</p>
