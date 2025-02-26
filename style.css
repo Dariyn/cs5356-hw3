@@ -42,13 +42,8 @@ img {
     margin: 20px auto;
     border-radius: 10px;
     filter: sepia(80%); /* Makes the image look vintage */
-    transition: filter 0.3s ease-in-out;
 }
 
-/* Hover Effect - Removes Filter on Hover */
-img:hover {
-    filter: none;
-}
 
 
 /* Cursor Effect */
