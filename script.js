@@ -7,14 +7,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Fetch a random dog image from Dog CEO API
+    // Fetch a random dog image for the main section
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
         .then(data => {
-            let dogImage = document.getElementById("dog-image");
-            dogImage.src = data.message; // API returns the image URL
+            document.getElementById("dog-image").src = data.message;
         })
         .catch(error => console.error("Error fetching dog image:", error));
+
+    // Fetch multiple dog images for the gallery
+    const dogIDs = ["dog1", "dog2", "dog3"];
+    dogIDs.forEach(id => {
+        fetch("https://dog.ceo/api/breeds/image/random")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById(id).src = data.message;
+            })
+            .catch(error => console.error("Error fetching dog image:", error));
+    });
 
     // Scroll Transition Effect
     const sections = document.querySelectorAll("section");
