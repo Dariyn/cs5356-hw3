@@ -36,12 +36,12 @@ nav a {
 /* Image Styling */
 /* Image Styling with Filter */
 img {
-    width: 250px; /* Set a fixed width */
+    width: 250px; 
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    filter: grayscale(80%); /* Makes the image look vintage */
+    filter: grayscale(80%) !important;
 }
 
 
