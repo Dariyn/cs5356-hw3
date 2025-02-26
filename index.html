@@ -44,12 +44,12 @@
               });
       </script>
 
-<div id="hoverBox" style="width:100px; height:100px; background-color:red;"></div>
-<script>
-    document.getElementById("hoverBox").addEventListener("mousemove", (e) => {
-        e.target.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 150)`;
-    });
-</script>
+<div class="interactive-area">
+    <h2>Move your mouse here!</h2>
+</div>
+
+<div class="cursor-circle"></div>
+
 
       
 
@@ -57,5 +57,6 @@
         <p>&copy; 2024 Darren Choy</p>
     </footer>
     
-      
+    <script src="script.js" defer></script>
+
 </div>
