@@ -4,11 +4,11 @@ Flexbox was used
 
 details html tag was used
 
-filter css tag is used
+filter css element is used on the image of me
 
-dog images api called
+dog images api called for dog gallery
 
-cursor circle interactivity added
+cursor circle interactivity added that traces mouse movement
 
 meta elements for link preview added
 
