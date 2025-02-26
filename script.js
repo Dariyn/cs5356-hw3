@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    document.addEventListener("touchmove", (event) => {
+        let touch = event.touches[0]; // Get the first touch point
+        moveCursor(touch.clientX, touch.clientY);
+    });
+
     // Function to fetch and display dog images
     const fetchDogImage = (elementId) => {
         fetch("https://dog.ceo/api/breeds/image/random")
