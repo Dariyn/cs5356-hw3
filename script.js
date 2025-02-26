@@ -37,4 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", revealSection);
     revealSection(); // Trigger the effect on page load
+
+
+    
 });
