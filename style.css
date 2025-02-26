@@ -34,13 +34,22 @@ nav a {
 }
 
 /* Image Styling */
+/* Image Styling with Filter */
 img {
     width: 250px; /* Set a fixed width */
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
+    filter: grayscale(50%) contrast(120%) brightness(90%);
+    transition: filter 0.3s ease-in-out;
 }
+
+/* Hover Effect - Removes Filter on Hover */
+img:hover {
+    filter: none;
+}
+
 
 /* Cursor Effect */
 #cursor-effect {
