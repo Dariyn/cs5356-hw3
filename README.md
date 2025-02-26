@@ -1,5 +1,7 @@
 # cs5356-hw3
 
+Specific elements used other than base requirements:
+
 Flexbox was used
 
 details html tag was used
