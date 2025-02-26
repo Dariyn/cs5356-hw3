@@ -31,18 +31,6 @@ img {
     
 }
 
-.interactive-area {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(100, 100, 255); /* Initial color */
-    color: white;
-    font-size: 20px;
-    transition: background-color 0.2s ease-in-out;
-}
-
 
 .cursor-circle {
     width: 20px;
