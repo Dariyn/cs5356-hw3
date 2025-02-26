@@ -1,57 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="My Homepage">
     <meta property="og:image" content="https://dariyn.github.io/cs5356-hw3/img/me.jpg">
     <meta property="og:description" content="Welcome to my personal homepage!">
-
     <title>My Personal Homepage</title>
     <link rel="stylesheet" href="style.css">
-</head> 
+</head>
 
+<body>
 
-<div class="container">
-    <header>
-        <h1>Welcome to My Personal Homepage</h1>
-    </header>
+    <!-- Cursor Effect Container -->
+    <div id="cursor-effect">
+        <div class="cursor-circle"></div>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="#bio">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Personal Homepage</h1>
+        </header>
 
-    <section id="bio">
-        <h2>About Me</h2>
-        <img src="img/me.jpg" alt="My Photo">
-        <h1>Hi, I'm Darren!</h1>
-        <p>I am a student passionate about AI and machine learning!</p>
-    </section>
+        <nav>
+            <ul>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <details>
-        <summary>Click to see more</summary>
-        <p>Hey! You found me :>.</p>
-      </details>
+        <section id="bio">
+            <h2>About Me</h2>
+            <img src="img/me.jpg" alt="My Photo">
+            <h1>Hi, I'm Darren!</h1>
+            <p>I am a student passionate about AI and machine learning!</p>
+        </section>
 
-      <div id="joke"></div>
-      <script>
-          fetch('https://v2.jokeapi.dev/joke/Any')
-              .then(response => response.json())
-              .then(data => {
-                  document.getElementById("joke").innerHTML = data.setup + " - " + data.delivery;
-              });
-      </script>
+        <details>
+            <summary>Click to see more</summary>
+            <p>Hey! You found me :>.</p>
+        </details>
 
-    <div class="cursor-circle"></div>
-
-      
+        <div id="joke"></div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Darren Choy</p>
     </footer>
-    
-    <script src="script.js" defer></script>
 
-</div>
+    <script src="script.js" defer></script>
+</body>
+</html>
+    
